@@ -223,7 +223,6 @@ button:hover {
 
     main {
         margin: 0;
-
     }
 
     .catalogo {
@@ -236,5 +235,16 @@ button:hover {
 
     .produto {
         justify-items: center;
+    }
+
+    section {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    select,
+    input {
+        width: 335px;
     }
 }
