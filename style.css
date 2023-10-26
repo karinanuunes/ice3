@@ -161,7 +161,8 @@ table {
 .produto {
     display: grid;
     text-align: center;
-    gap: 5px;
+    gap: 10px;
+    justify-items: center;
 }
 
 .img {
@@ -169,6 +170,18 @@ table {
     flex-direction: column;
     align-items: center;
     position: relative;
+}
+
+ button {
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid #969696;
+    width: 100px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #dadada;
 }
 
 .ordem {
@@ -183,14 +196,45 @@ table {
 }
 
 @media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 10px;
+    }
+
+    header a {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+    }
+
     li {
         font-size: 12px;
+        display: flex;
+        justify-content: space-around;
     }
+    
+    .ordem {
+        padding: 10px;
+        transform: none;
+        font-size: 12px;
+    }
+
+    main {
+        margin: 0;
+
+    }
+
     .catalogo {
         grid-template-columns: repeat(1, 1fr);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
+    }
+
+    .produto {
+        justify-items: center;
     }
 }
