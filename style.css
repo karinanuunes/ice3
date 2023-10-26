@@ -178,10 +178,12 @@ table {
     border: 1px solid #969696;
     width: 100px;
     cursor: pointer;
+    color: #181818;
 }
 
 button:hover {
     background-color: #dadada;
+    color: #181818;
 }
 
 .ordem {
