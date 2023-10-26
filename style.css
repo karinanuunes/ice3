@@ -256,4 +256,15 @@ button:hover {
     .banner {
         width: 100%;
     }
+
+    #tabela {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px
+    }
+
+    table {
+        width:100%
+    }
 }
