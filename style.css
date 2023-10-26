@@ -247,4 +247,13 @@ button:hover {
     input {
         width: 335px;
     }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner {
+        width: 100%;
+    }
 }
