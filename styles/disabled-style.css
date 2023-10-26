@@ -1,0 +1,273 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    color: #181818;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.logo {
+    width: 70%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 30px;
+    margin: 50px 50px auto 50px;
+    flex-direction: row;
+    gap: 32px;
+    padding: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+
+    background-color: #f1f1f1;
+    border-top: 1px solid #e6e6e6;
+    font-size: 13px;
+}
+
+.banner {
+    width: 30%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+section p {
+    font-size: 12px;
+}
+
+input {
+    background-color: #e6e6e6;
+    width: 500px;
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    width: 200px;
+    background-color: #e6e6e6;
+}
+
+select {
+    background-color: #e6e6e6;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    width: 500px;
+}
+
+textarea {
+    background-color: #e6e6e6;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    width: 500px;
+}
+
+#tabela {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    margin-top: 0;
+}
+
+table {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    border: 2px solid #969696;
+    width: 500px;
+    text-align: center;
+}
+
+.img {
+    width: 300px;
+}
+
+.catalogo {
+    width: 100%;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 100px;
+}
+
+.produto {
+    display: grid;
+    text-align: center;
+    gap: 10px;
+    justify-items: center;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+ button {
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid #969696;
+    width: 100px;
+    cursor: pointer;
+    color: #181818;
+}
+
+button:hover {
+    background-color: #dadada;
+    color: #181818;
+}
+
+.ordem {
+    width: 100%;
+    max-width: 932px;
+    margin: 10px 50px 0px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    transform: translateY(200%);
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 10px;
+    }
+
+    header a {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+    }
+
+    li {
+        font-size: 12px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .ordem {
+        padding: 10px;
+        transform: none;
+        font-size: 12px;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .catalogo {
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .produto {
+        justify-items: center;
+    }
+
+    section {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    select,
+    input,
+    textarea {
+        width: 335px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    #tabela {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px
+    }
+
+    table {
+        width:100%
+    }
+}
