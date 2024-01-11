@@ -15,7 +15,7 @@
         <nav>
             <ul>
                 <li><a href="./index.html">MOLETONS</a></li>
-                <li><a href="./register.html">CADASTRO</a></li>
+                <li><a href="#" onclick="abrirCadastro()">CADASTRO</a></li>
                 <li><a href="#about" onclick="abrirSobre()">SOBRE NÓS</a></li>
                 <li><a href="#tabela" onclick="abrirTabela()">TABELA DE TAMANHOS</a></li>
                 <li><a href="#" onclick="abrirContato()">CONTATO</a></li>
@@ -77,6 +77,44 @@
                 <br />
             </div>
         </div>
+
+        <div id="cadastro" style="display: none;">
+            <p>
+                Queremos lhe dar as boas-vindas para fazer parte da comunidade Ice Cube! Cadastre-se conosco para desfrutar de benefícios exclusivos e estar por dentro das últimas novidades da moda e promoções especiais. Ao se tornar um membro, você terá acesso a ofertas personalizadas, informações antecipadas sobre lançamentos e a conveniência de um processo de compra mais rápido e fácil. Sua jornada conosco será ainda mais incrível quando você se cadastrar na Ice Cube. Inscreva-se agora e comece a desfrutar de todos os privilégios que preparamos para você!
+            </p>
+            <section id="cadastro">
+                <h1>Queremos conhecer você!</h1>
+
+                <br />
+                <form method="post" action="https://65282114931d71583df1ebce.mockapi.io/api/atvada/users">
+                    <label for="nome">Nome</label><br />
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required /><br /><br />
+                    
+                    <label for="data">Data de nascimento</label><br />
+                    <input type="date" name="data" id="data" required><br /><br />
+
+                    <label for="regiao">Região do Brasil</label><br />
+                    <select name="regiao">
+                        <option disabled selected>Selecione sua região</option>
+                        <option>Norte</option>
+                        <option>Nordeste</option>
+                        <option>Centro-Oeste</option>
+                        <option>Sudeste</option>
+                        <option>Sul</option>
+                    </select><br /><br />
+                    
+                    <label for="email">E-mail</label><br />
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required /><br /><br />
+
+                    <label for="password">Senha</label><br />
+                    <input type="password" name="password" id="password" placeholder="Digite uma senha" required />
+                    <p>Para a sua segurança, digite uma senha com letras, números e símbolos!</p><br /><br />
+                    
+                    <input type="submit" value="Registrar">
+                    </form>
+            </section>
+        </div>
+
     <div id="about" style="display: none;">
         <img src="./images/banner.png" alt="Homem de sueter preto e chapéu preto sorrindo para o chão com as mãos no bolso" class="banner">
 

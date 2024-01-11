@@ -80,6 +80,12 @@ footer {
   font-size: 13px;
 }
 
+#cadastro {
+  margin: 3em;
+  flex-direction: column;
+  align-items: center;
+}
+
 .banner {
   width: 30%;
   margin-right: 10px;
