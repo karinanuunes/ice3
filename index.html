@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice Cube</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="icon" href="images/ice.png">
-    <link rel="stylesheet" href="./styles/style-index.css" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
     <header>
@@ -20,18 +16,18 @@
             <ul>
                 <li><a href="./index.html">MOLETONS</a></li>
                 <li><a href="./register.html">CADASTRO</a></li>
-                <li><a href="./about.html">SOBRE NÓS</a></li>
-                <li><a href="./sizes.html">TABELA DE TAMANHOS</a></li>
+                <li><a href="#about" onclick="abrirSobre()">SOBRE NÓS</a></li>
+                <li><a href="#tabela" onclick="abrirTabela()">TABELA DE TAMANHOS</a></li>
                 <li><a href="./contact.html">CONTATO</a></li>
             </ul>
         </nav>
     </header>
-    <div class="ordem">
+    <div class="ordem" id="ordem">
         <p>6 PRODUTOS</p><br />
         <p>ORDENAR POR: RELEVÂNCIA</p>
     </div>
     <main>
-        <div cols="3" class="catalogo">
+        <div cols="3" class="catalogo" id="catalogo" style="display: grid;">
             <div class="produto">
                 <img src="./images/moletom1.png" alt="Homem de cabelos brancos, sorrindo e posando para uma foto de moletom rosa claro" class="img">
                 <legend>Moletom Rosa Claro</legend>
@@ -81,14 +77,77 @@
                 <br />
             </div>
         </div>
-    </main>
+    <div id="about" style="display: none;">
+        <img src="./images/banner.png" alt="Homem de sueter preto e chapéu preto sorrindo para o chão com as mãos no bolso" class="banner">
+
+    <p>
+        Na Ice Cube, acreditamos que a moda deve ser compartilhada e vivida em conjunto. É por isso que valorizamos nossa presença nas redes sociais e convidamos você a se juntar a nós nessa jornada. Siga-nos nas redes sociais para fazer parte de nossa comunidade vibrante de entusiastas da moda. Mantenha-se atualizado com as últimas tendências, participe de concursos exclusivos, e mergulhe em um mundo de inspiração e estilo. Estamos ansiosos para compartilhar nossa paixão pela moda com você e criar laços mais fortes nas redes sociais. Junte-se a nós hoje e faça parte dessa jornada emocionante!
+        <br /><br />
+        Nos acompanhe nas redes sociais:<br /><br />
+        <a href="https://linkedin.com/in/karinanuunes/"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a><br />
+        <a href="https://github.com/karinanuunes" target="_blank"><ion-icon name="logo-github"></ion-icon> GitHub</a><br />
+        <a href="https://instagram.com/karinanuunes" target="_blank"><ion-icon name="logo-instagram"></ion-icon> Instagram</a>
+    </p>
+    </div>
 
     
+    <div id="tabela" style="display: none;">
+        <div id="conteudoTab">
+            <p>
+                Queremos que você tenha total transparência na hora de fazer sua escolha. Na Ice Cube, estamos comprometidos em oferecer produtos de alta qualidade a preços acessíveis. Navegue pela nossa variedade de moletoms e descubra que estilo e conforto podem ser perfeitamente equilibrados. Os preços justos que praticamos são um reflexo do nosso compromisso em tornar a moda contemporânea ao alcance de todos. Não hesite em explorar nossa gama de produtos - a qualidade e o valor de cada peça falarão por si mesmos. Queremos que você faça sua escolha com confiança, sabendo que está investindo em qualidade, estilo e conforto a um preço que faz sentido para você.
+            </p>
+        </div>
+            <img src="./images/medidas.png" alt="Imagem com desenho de moletom e indicação das medidas">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Tamanho</th>
+                        <th>Comprimento</th>
+                        <th>Largura</th>
+                        <th>Manga</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>PP</td>
+                    <td>57,5 cm</td>
+                    <td>50 cm</td>
+                    <td>56 cm</td>
+                </tr>
+                <tr>
+                    <td>P</td>
+                    <td>60,5 cm</td>
+                    <td>53 cm</td>
+                    <td>59 cm</td>
+                </tr>
+            <tr>
+                <td>M</td>
+                <td>63,5 cm</td>
+                <td>56 cm</td>
+                <td>62 cm</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>66,5 cm</td>
+                <td>59 cm</td>
+                <td>65 cm</td>
+            </tr>
+            <tr>
+                <td>GG</td>
+                <td>71,5 cm</td>
+                <td>64 cm</td>
+                <td>70 cm</td>
+            </tr>
+        </table>
+    </div>
+</main>
 
     <footer>
         <a href="#">Volte ao topo</a>
         <br />
         &#xA9 ICE CUBE - Todos os diretios reservados
     </footer>
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
