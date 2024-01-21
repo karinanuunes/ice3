@@ -14,16 +14,15 @@ function abrirSobre() {
 
   about.style.display = "flex";
   about.innerHTML = `
-  <img src="./images/banner.png" alt="Homem de sueter preto e chapéu preto sorrindo para o chão com as mãos no bolso" class="banner">
-
-        <p>
-            Na Ice Cube, acreditamos que a moda deve ser compartilhada e vivida em conjunto. É por isso que valorizamos nossa presença nas redes sociais e convidamos você a se juntar a nós nessa jornada. Siga-nos nas redes sociais para fazer parte de nossa comunidade vibrante de entusiastas da moda. Mantenha-se atualizado com as últimas tendências, participe de concursos exclusivos, e mergulhe em um mundo de inspiração e estilo. Estamos ansiosos para compartilhar nossa paixão pela moda com você e criar laços mais fortes nas redes sociais. Junte-se a nós hoje e faça parte dessa jornada emocionante!
-            <br /><br />
-            Nos acompanhe nas redes sociais:<br /><br />
-            <a href="https://linkedin.com/in/karinanuunes/"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a><br />
-            <a href="https://github.com/karinanuunes" target="_blank"><ion-icon name="logo-github"></ion-icon> GitHub</a><br />
-            <a href="https://instagram.com/karinanuunes" target="_blank"><ion-icon name="logo-instagram"></ion-icon> Instagram</a>
-        </p>
+    <img src="./images/banner.png" alt="Homem de sueter preto e chapéu preto sorrindo para o chão com as mãos no bolso" class="banner">
+    <p>
+      Na Ice Cube, acreditamos que a moda deve ser compartilhada e vivida em conjunto. É por isso que valorizamos nossa presença nas redes sociais e convidamos você a se juntar a nós nessa jornada. Siga-nos nas redes sociais para fazer parte de nossa comunidade vibrante de entusiastas da moda. Mantenha-se atualizado com as últimas tendências, participe de concursos exclusivos, e mergulhe em um mundo de inspiração e estilo. Estamos ansiosos para compartilhar nossa paixão pela moda com você e criar laços mais fortes nas redes sociais. Junte-se a nós hoje e faça parte dessa jornada emocionante!
+      <br /><br />
+      Nos acompanhe nas redes sociais:<br /><br />
+      <a href="https://linkedin.com/in/karinanuunes/"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a><br />
+      <a href="https://github.com/karinanuunes" target="_blank"><ion-icon name="logo-github"></ion-icon> GitHub</a><br />
+      <a href="https://instagram.com/karinanuunes" target="_blank"><ion-icon name="logo-instagram"></ion-icon> Instagram</a>
+    </p>
   `;
 }
 
