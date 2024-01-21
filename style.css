@@ -212,6 +212,15 @@ button:hover {
   margin: 0 50em 0 50em;
 }
 
+@media (max-width: 1000px) {
+  .ordem {
+    padding: 0 50px;
+  }
+  .catalogo {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
 @media (max-width: 768px) {
   header {
     display: flex;
@@ -233,25 +242,20 @@ button:hover {
   }
 
   .ordem {
-    padding: 10px;
+    padding: 0 50px;
     transform: none;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   main {
     margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 350px;
   }
 
   .catalogo {
     grid-template-columns: repeat(1, 1fr);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .produto {
-    justify-items: center;
   }
 
   section {
